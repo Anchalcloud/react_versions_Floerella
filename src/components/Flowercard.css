@@ -1,0 +1,307 @@
+/* ===============================
+   BEST SELLERS SECTION
+================================ */
+
+.best-seller {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 45px 20px 50px;
+  overflow: hidden;
+}
+
+.best-seller h2 {
+  margin: 0 0 25px;
+}
+
+
+/* ===============================
+   FLOWER GRID
+================================ */
+
+.flower-grid {
+  width: 100%;
+  box-sizing: border-box;
+
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+
+  gap: 25px;
+}
+
+
+/* ===============================
+   FLOWER CARD
+================================ */
+
+.flower-card {
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  background: #ffffff;
+
+  border-radius: 20px;
+  overflow: hidden;
+
+  box-shadow: 0 8px 15px #b3a4b9;
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.flower-card:hover {
+  transform: translateY(-8px);
+
+  box-shadow:
+    0 15px 20px #9e8fa5;
+}
+
+
+/* ===============================
+   IMAGE
+================================ */
+
+.flower-image-container {
+  position: relative;
+
+  width: 100%;
+  height: 190px;
+
+  overflow: hidden;
+}
+
+.flower-image {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  transition: transform 0.5s ease;
+}
+
+.flower-card:hover .flower-image {
+  transform: scale(1.08);
+}
+
+
+/* ===============================
+   WISHLIST BUTTON
+================================ */
+
+.wishlist-btn {
+  position: absolute;
+
+  top: 14px;
+  right: 14px;
+
+  width: 42px;
+  height: 42px;
+
+  border: none;
+  border-radius: 50%;
+
+  background: whitesmoke;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  font-size: 17px;
+  color: rgb(228, 216, 219);
+
+  transition: 0.3s ease;
+}
+
+.wishlist-btn:hover {
+  transform: scale(1.1);
+  background: #ffffff;
+}
+
+.wishlist-active {
+  color: #943a49;
+}
+
+
+/* ===============================
+   DETAILS
+================================ */
+
+.flower-card-details {
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+
+  padding: 10px 15px 14px;
+
+  text-align: left;
+}
+
+.flower-card-details h3 {
+  margin: 0 0 8px;
+
+  font-size: 15px;
+  font-weight: 500;
+
+  color: #5b5072;
+
+  overflow-wrap: break-word;
+}
+
+
+/* ===============================
+   PRICE + RATING
+================================ */
+
+.price-wishlist {
+  width: 100%;
+  min-width: 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 10px;
+}
+
+.price {
+  margin: 0;
+
+  font-size: 17px;
+  font-weight: 400;
+
+  color: #943a49;
+}
+
+.flower-rating {
+  flex-shrink: 0;
+
+  font-size: 13px;
+  color: goldenrod;
+}
+
+
+/* ===============================
+   TABLET
+================================ */
+
+@media (max-width: 900px) {
+
+  .best-seller {
+    padding: 40px 5% 45px;
+  }
+
+  .flower-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+  }
+
+  .flower-image-container {
+    height: 180px;
+  }
+
+  .flower-card-details {
+    padding: 10px 13px 14px;
+  }
+}
+
+
+/* ===============================
+   MOBILE
+================================ */
+
+@media (max-width: 650px) {
+
+  .best-seller {
+    padding: 35px 6% 40px;
+  }
+
+  .best-seller h2 {
+    margin-bottom: 22px;
+    font-size: 24px;
+  }
+
+  .flower-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 15px;
+  }
+
+  .flower-image-container {
+    height: 170px;
+  }
+
+  .wishlist-btn {
+    width: 36px;
+    height: 36px;
+
+    top: 10px;
+    right: 10px;
+
+    font-size: 15px;
+  }
+
+  .flower-card-details {
+    padding: 9px 10px 12px;
+  }
+
+  .flower-card-details h3 {
+    font-size: 14px;
+    margin-bottom: 7px;
+  }
+
+  .price {
+    font-size: 15px;
+  }
+
+  .flower-rating {
+    font-size: 11px;
+  }
+}
+
+
+/* ===============================
+   SMALL MOBILE
+================================ */
+
+@media (max-width: 400px) {
+
+  .best-seller {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .flower-grid {
+    gap: 12px;
+  }
+
+  .flower-image-container {
+    height: 155px;
+  }
+
+  .wishlist-btn {
+    width: 34px;
+    height: 34px;
+
+    top: 8px;
+    right: 8px;
+  }
+
+  .flower-card-details {
+    padding: 8px 9px 10px;
+  }
+
+  .flower-card-details h3 {
+    font-size: 13px;
+  }
+
+  .price {
+    font-size: 14px;
+  }
+
+  .flower-rating {
+    font-size: 10px;
+  }
+}

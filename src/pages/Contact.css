@@ -1,0 +1,382 @@
+/* ===============================
+   CONTACT HERO
+================================ */
+
+.contact-hero {
+  min-height: 300px;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+
+  padding: 40px 20px;
+
+  background: linear-gradient(
+    110deg,
+    #f7e7ed 0%,
+    #ece4ed 55%,
+    #dbe8f1 100%
+  );
+}
+
+.success-message {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 14px;
+  color: #4f8a6b;
+}
+
+.section-label {
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  color: #7c3343;
+  margin-bottom: 15px;
+}
+
+
+.contact-hero h1 {
+  font-size: clamp(38px, 5vw, 60px);
+  font-weight: 400;
+  color: #34313a;
+  margin: 20px 0 15px;
+}
+
+
+.contact-intro {
+  font-size: 15px;
+  color: #5d5660;
+  margin-top: 20px;
+}
+
+
+/* ===============================
+   CONTACT MAIN SECTION
+================================ */
+
+.contact-section {
+  display: grid;
+
+  grid-template-columns: 1fr 1.1fr;
+
+  gap: 70px;
+
+  padding: 60px 7%;
+
+  background: #faf8f4;
+
+  align-items: start;
+}
+
+
+/* ===============================
+   CONTACT INFORMATION
+================================ */
+
+.contact-info {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 18px;
+}
+
+
+.contact-card {
+  min-height: 85px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 25px;
+
+  padding: 18px 30px;
+
+  border: 1px solid #d8d0d5;
+
+  border-radius: 28px;
+
+  background: #ffffff;
+
+  transition: 0.3s ease;
+}
+
+
+.contact-card:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 8px 20px
+    rgba(100, 70, 80, 0.12);
+}
+
+
+.contact-icon {
+  font-size: 22px;
+
+  color: #7c3343;
+
+  width: 25px;
+}
+
+
+.contact-card h3 {
+  margin: 0 0 6px;
+
+  font-size: 18px;
+
+  font-weight: 500;
+
+  color: #34313a;
+}
+
+
+.contact-card p {
+  margin: 0;
+
+  font-size: 13px;
+
+  color: #6b646c;
+}
+
+
+/* ===============================
+   WHATSAPP BUTTON
+================================ */
+
+.whatsapp-btn {
+  width: 100%;
+
+  padding: 15px;
+
+  border: none;
+
+  border-radius: 30px;
+
+  background: #5f9f91;
+
+  color: white;
+
+  font-size: 15px;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  gap: 10px;
+}
+
+
+.whatsapp-btn:hover {
+  transform: translateY(-3px);
+
+  background: #4e887b;
+}
+
+
+/* ===============================
+   CONTACT FORM
+================================ */
+
+.contact-form {
+  padding: 35px 45px;
+
+  border: 1px solid #d8d0d5;
+
+  border-radius: 40px;
+
+  background: #ffffff;
+}
+
+
+.contact-form h2 {
+  font-size: 28px;
+
+  font-weight: 500;
+
+  color: #722d3c;
+
+  margin: 0 0 30px;
+}
+
+
+/* ===============================
+   FORM GROUP
+================================ */
+
+.form-group {
+  display: flex;
+
+  flex-direction: column;
+
+  margin-bottom: 22px;
+}
+
+
+.form-group label {
+  font-size: 10px;
+
+  font-weight: 600;
+
+  letter-spacing: 1px;
+
+  color: #5d5660;
+
+  margin-bottom: 8px;
+}
+
+
+.form-group input {
+  height: 50px;
+
+  padding: 0 20px;
+
+  border: 1px solid #bfb4bd;
+
+  border-radius: 30px;
+
+  outline: none;
+
+  font-size: 14px;
+
+  font-family: inherit;
+}
+
+
+.form-group textarea {
+  min-height: 120px;
+
+  padding: 15px 20px;
+
+  border: 1px solid #bfb4bd;
+
+  border-radius: 25px;
+
+  outline: none;
+
+  resize: none;
+
+  font-size: 14px;
+
+  font-family: inherit;
+}
+
+
+/* ===============================
+   INPUT FOCUS
+================================ */
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #7c3343;
+
+  box-shadow:
+    0 0 0 3px
+    rgba(124, 51, 67, 0.1);
+}
+
+
+/* ===============================
+   SEND BUTTON
+================================ */
+
+.send-btn {
+  width: 100%;
+
+  height: 48px;
+
+  border: none;
+
+  border-radius: 30px;
+
+  background: linear-gradient(
+    90deg,
+    #8d6271,
+    #7c3343
+  );
+
+  color: white;
+
+  font-size: 15px;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+
+.send-btn:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 8px 20px
+    rgba(124, 51, 67, 0.25);
+}
+
+
+/* ===============================
+   TABLET
+================================ */
+
+@media (max-width: 900px) {
+
+  .contact-section {
+    grid-template-columns: 1fr;
+
+    gap: 40px;
+  }
+
+}
+
+
+/* ===============================
+   MOBILE
+================================ */
+
+@media (max-width: 600px) {
+
+  .contact-hero {
+    min-height: 250px;
+  }
+
+
+  .contact-hero h1 {
+    font-size: 38px;
+  }
+
+
+  .contact-section {
+    padding: 40px 5%;
+  }
+
+
+  .contact-card {
+    padding: 15px 20px;
+
+    gap: 18px;
+  }
+
+
+  .contact-form {
+    padding: 30px 20px;
+
+    border-radius: 25px;
+  }
+
+
+  .contact-form h2 {
+    font-size: 25px;
+  }
+
+}

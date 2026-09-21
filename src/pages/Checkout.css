@@ -1,0 +1,614 @@
+/* ===============================
+   CHECKOUT PAGE
+================================ */
+
+.checkout-page {
+  width: 100%;
+  min-height: 70vh;
+
+  box-sizing: border-box;
+
+  padding: 90px 8% 70px;
+
+  background: linear-gradient(
+    110deg,
+    #f7e7ed,
+    #ece4ed,
+    #dbe8f1
+  );
+
+  overflow-x: hidden;
+}
+
+
+/* ===============================
+   PAGE TITLE
+================================ */
+
+.checkout-page h1 {
+  margin: 0 0 28px;
+
+  font-size: clamp(30px, 4vw, 32px);
+  font-weight: 500;
+
+  color: #34313a;
+}
+
+
+/* ===============================
+   MAIN LAYOUT
+================================ */
+
+.checkout-container {
+  width: 100%;
+  min-width: 0;
+
+  display: grid;
+
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+
+  gap: 25px;
+
+  align-items: start;
+}
+
+
+/* ===============================
+   FORM + SUMMARY BOXES
+================================ */
+
+.checkout-form,
+.checkout-summary {
+  width: 100%;
+  min-width: 0;
+
+  box-sizing: border-box;
+
+  background: #ffffff;
+
+  border-radius: 18px;
+
+  padding: 25px;
+
+  box-shadow:
+    0 8px 25px
+    rgba(80, 60, 70, 0.1);
+}
+
+
+/* ===============================
+   HEADINGS
+================================ */
+
+.checkout-form h2,
+.checkout-summary h2 {
+  margin: 0 0 16px;
+
+  font-size: 20px;
+  font-weight: 500;
+
+  color: #34313a;
+}
+
+
+/* ===============================
+   FORM ROW
+================================ */
+
+.form-row {
+  width: 100%;
+  min-width: 0;
+
+  display: grid;
+
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+
+  gap: 12px;
+}
+
+
+/* ===============================
+   INPUTS
+================================ */
+
+.checkout-form input,
+.checkout-form textarea {
+  width: 100%;
+
+  box-sizing: border-box;
+
+  padding: 10px 12px;
+
+  margin-bottom: 10px;
+
+  border: 1px solid #ddd3d8;
+
+  border-radius: 8px;
+
+  font-size: 13px;
+
+  outline: none;
+
+  background: white;
+}
+
+.checkout-form input:focus,
+.checkout-form textarea:focus {
+  border-color: #7c3343;
+}
+
+
+/* ===============================
+   ADDRESS
+================================ */
+
+.checkout-form textarea {
+  height: 70px;
+
+  resize: none;
+}
+
+
+/* ===============================
+   PAYMENT SECTION
+================================ */
+
+.payment-section {
+  margin-top: 5px;
+}
+
+.payment-section h2 {
+  margin-top: 10px;
+  margin-bottom: 12px;
+}
+
+
+/* ===============================
+   PAYMENT OPTIONS
+================================ */
+
+.payment-options {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+
+  gap: 10px;
+
+  margin-bottom: 18px;
+}
+
+.payment-option {
+  min-width: 0;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 7px;
+
+  padding: 13px 8px;
+
+  border: 1px solid #ddd3d8;
+
+  border-radius: 10px;
+
+  cursor: pointer;
+
+  font-size: 13px;
+
+  transition: 0.3s;
+}
+
+.payment-option:hover {
+  border-color: #7c3343;
+
+  background: #faf5f7;
+}
+
+.payment-option input {
+  width: auto;
+
+  margin: 0;
+
+  flex-shrink: 0;
+
+  accent-color: #7c3343;
+}
+
+
+/* ===============================
+   PLACE ORDER
+================================ */
+
+.place-order-btn {
+  width: 100%;
+
+  height: 42px;
+
+  border: none;
+
+  border-radius: 22px;
+
+  background: #7c3343;
+
+  color: white;
+
+  font-size: 14px;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+.place-order-btn:hover {
+  transform: translateY(-2px);
+
+  background: #5f2634;
+
+  box-shadow:
+    0 6px 16px
+    rgba(124, 51, 67, 0.25);
+}
+
+
+/* ===============================
+   ORDER SUMMARY
+================================ */
+
+.checkout-summary {
+  display: flex;
+
+  flex-direction: column;
+
+  height: auto;
+
+  max-height: none;
+}
+
+
+/* ===============================
+   ORDER ITEMS
+================================ */
+
+.checkout-items {
+  width: 100%;
+  min-width: 0;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 12px;
+
+  max-height: 280px;
+
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  padding-right: 4px;
+
+  scrollbar-width: none;
+
+  -ms-overflow-style: none;
+}
+
+.checkout-items::-webkit-scrollbar {
+  display: none;
+}
+
+
+/* ===============================
+   SINGLE FLOWER ITEM
+================================ */
+
+.checkout-item {
+  width: 100%;
+  min-width: 0;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  padding-bottom: 10px;
+
+  border-bottom: 1px solid #eee7ea;
+}
+
+
+/* FLOWER IMAGE */
+
+.checkout-item img {
+  width: 65px;
+  height: 65px;
+
+  flex-shrink: 0;
+
+  object-fit: cover;
+
+  border-radius: 14px;
+}
+
+
+/* FLOWER INFO */
+
+.checkout-item-info {
+  flex: 1;
+
+  min-width: 0;
+}
+
+.checkout-item h3 {
+  margin: 0 0 5px;
+
+  font-size: 14px;
+
+  font-weight: 500;
+
+  color: #34313a;
+
+  overflow-wrap: break-word;
+}
+
+.checkout-item p {
+  margin: 0;
+
+  font-size: 12px;
+
+  color: #777;
+}
+
+.checkout-item strong {
+  flex-shrink: 0;
+
+  font-size: 13px;
+
+  color: #7c3343;
+
+  white-space: nowrap;
+}
+
+
+/* ===============================
+   PRICE SUMMARY
+================================ */
+
+.price-summary {
+  width: 100%;
+
+  margin-top: 15px;
+}
+
+.checkout-summary hr {
+  border: none;
+
+  border-top: 1px solid #e0d7dc;
+
+  margin: 12px 0;
+}
+
+.summary-row {
+  width: 100%;
+
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 15px;
+
+  margin-bottom: 9px;
+
+  font-size: 13px;
+
+  color: #5d5660;
+}
+
+.checkout-total {
+  margin-top: 8px;
+
+  font-size: 16px;
+
+  color: #34313a;
+}
+
+
+/* ===============================
+   EMPTY CART
+================================ */
+
+.empty-checkout {
+  width: 100%;
+  max-width: 500px;
+
+  box-sizing: border-box;
+
+  margin: 0 auto;
+
+  padding: 30px;
+
+  background: white;
+
+  text-align: center;
+
+  border-radius: 18px;
+
+  color: #5d5660;
+}
+
+
+/* ===============================
+   TABLET
+================================ */
+
+@media (max-width: 850px) {
+
+  .checkout-page {
+    padding: 85px 6% 60px;
+  }
+
+  .checkout-container {
+    grid-template-columns: 1fr;
+
+    gap: 20px;
+  }
+
+  .checkout-form,
+  .checkout-summary {
+    padding: 22px;
+  }
+}
+
+
+/* ===============================
+   MOBILE
+================================ */
+
+@media (max-width: 600px) {
+
+  .checkout-page {
+    padding: 80px 6% 50px;
+  }
+
+  .checkout-page h1 {
+    font-size: 28px;
+
+    margin-bottom: 25px;
+  }
+
+  .checkout-container {
+    gap: 18px;
+  }
+
+  .checkout-form,
+  .checkout-summary {
+    padding: 18px;
+  }
+
+
+  /* ---------- FORM ---------- */
+
+  .form-row {
+    grid-template-columns: 1fr;
+
+    gap: 0;
+  }
+
+
+  /* ---------- PAYMENT ---------- */
+
+  .payment-options {
+    grid-template-columns: 1fr;
+  }
+
+  .payment-option {
+    justify-content: flex-start;
+
+    padding: 12px;
+  }
+
+
+  /* ---------- ITEMS ---------- */
+
+  .checkout-items {
+    max-height: 280px;
+  }
+
+  .checkout-item {
+    gap: 10px;
+  }
+
+  .checkout-item img {
+    width: 58px;
+    height: 58px;
+  }
+
+  .checkout-item h3 {
+    font-size: 13px;
+  }
+
+  .checkout-item p {
+    font-size: 11px;
+  }
+
+  .checkout-item strong {
+    font-size: 12px;
+  }
+
+
+  /* ---------- SUMMARY ---------- */
+
+  .summary-row {
+    font-size: 12px;
+  }
+
+  .checkout-total {
+    font-size: 15px;
+  }
+}
+
+
+/* ===============================
+   SMALL MOBILE
+================================ */
+
+@media (max-width: 400px) {
+
+  .checkout-page {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .checkout-form,
+  .checkout-summary {
+    padding: 15px;
+  }
+
+  .checkout-page h1 {
+    font-size: 26px;
+  }
+
+  .checkout-form h2,
+  .checkout-summary h2 {
+    font-size: 18px;
+  }
+
+  .checkout-form input,
+  .checkout-form textarea {
+    font-size: 12px;
+  }
+
+  .payment-option {
+    font-size: 12px;
+  }
+
+  .checkout-item img {
+    width: 52px;
+    height: 52px;
+  }
+
+  .checkout-item h3 {
+    font-size: 12px;
+  }
+
+  .checkout-item p {
+    font-size: 10px;
+  }
+
+  .checkout-item strong {
+    font-size: 11px;
+  }
+
+  .place-order-btn {
+    height: 40px;
+    font-size: 13px;
+  }
+
+  .summary-row {
+    font-size: 11px;
+  }
+}

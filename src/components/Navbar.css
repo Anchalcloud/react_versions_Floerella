@@ -1,0 +1,420 @@
+/* =========================
+   MAIN NAVBAR
+========================= */
+
+.navbar {
+  width: 100%;
+  height: 60px;
+
+  padding: 0 20px;
+  box-sizing: border-box;
+
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+
+  background-color: #fcf9f9;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  z-index: 99999;
+}
+
+
+/* =========================
+   LOGO
+========================= */
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.navbar-logo img {
+  width: 110px;
+  height: 55px;
+
+  object-fit: contain;
+  display: block;
+}
+
+
+/* =========================
+   DESKTOP LINKS
+========================= */
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.navbar-links a {
+  color: #554463;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+
+/* =========================
+   SEARCH
+========================= */
+
+.search-box {
+  width: 220px;
+  height: 36px;
+
+  display: flex;
+  align-items: center;
+
+  padding: 0 10px;
+  box-sizing: border-box;
+
+  border: 1px solid #ddd;
+  border-radius: 25px;
+
+  background: white;
+}
+
+.search-box input {
+  width: 100%;
+  min-width: 0;
+
+  border: none;
+  outline: none;
+
+  background: transparent;
+
+  font-size: 14px;
+}
+
+.search-box button {
+  border: none;
+  background: transparent;
+
+  cursor: pointer;
+
+  color: #927093;
+}
+
+
+/* =========================
+   HAMBURGER
+========================= */
+
+.navbar-menu-button {
+  display: flex;
+  align-items: center;
+
+  position: relative;
+
+  flex-shrink: 0;
+}
+
+.navbar-menu-button > button {
+  border: none;
+  background: transparent;
+
+  color: #66536d;
+
+  font-size: 22px;
+
+  cursor: pointer;
+
+  padding: 8px;
+}
+
+
+/* =========================
+   MENU PANEL
+========================= */
+
+.menu-panel {
+  position: absolute;
+
+  top: 50px;
+  right: 0;
+
+  width: 230px;
+
+  padding: 15px;
+
+  box-sizing: border-box;
+
+  background: white;
+
+  border-radius: 12px;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 5px;
+
+  z-index: 100000;
+}
+
+
+/* CLOSE BUTTON */
+
+.menu-panel > button {
+  align-self: flex-end;
+
+  border: none;
+  background: transparent;
+
+  font-size: 20px;
+
+  color: #66536d;
+
+  cursor: pointer;
+}
+
+
+/* MENU ITEMS */
+
+.menu-panel > a,
+.account-menu-button {
+  width: 100%;
+  min-height: 42px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 10px 12px;
+
+  box-sizing: border-box;
+
+  border: none;
+  border-radius: 8px;
+
+  background: transparent;
+
+  color: #66536d;
+
+  text-decoration: none;
+
+  font-size: 15px;
+
+  cursor: pointer;
+}
+
+.menu-panel > a:hover,
+.account-menu-button:hover {
+  background: #f7e7ed;
+}
+
+
+/* =========================
+   DESKTOP
+   Hide mobile navigation
+========================= */
+
+.mobile-nav-link {
+  display: none !important;
+}
+
+
+/* =========================
+   ACCOUNT
+========================= */
+
+.account-arrow {
+  margin-left: auto;
+}
+
+.account-submenu {
+  display: flex;
+  flex-direction: column;
+
+  margin-left: 25px;
+}
+
+.account-submenu a,
+.account-submenu button {
+  padding: 8px;
+
+  border: none;
+  background: transparent;
+
+  text-align: left;
+
+  color: #66536d;
+
+  text-decoration: none;
+
+  cursor: pointer;
+}
+
+/* ==================================================
+   SMALL TABLET
+   701px - 768px
+================================================== */
+
+@media (min-width: 701px) and (max-width: 768px) {
+
+  .navbar {
+    padding: 0 12px;
+  }
+
+  .navbar-logo img {
+    width: 75px;
+    height: 55px;
+  }
+
+  .navbar-links {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .navbar-links a {
+    font-size: 13px;
+  }
+
+  .search-box {
+    width: 160px;
+    height: 34px;
+  }
+
+  .navbar-menu-button > button {
+    font-size: 20px;
+    padding: 6px;
+  }
+
+  /* Don't repeat main navigation inside menu */
+  .mobile-nav-link {
+    display: none !important;
+  }
+}
+
+
+/* ==================================================
+   TABLET / MOBILE
+================================================== */
+
+@media (max-width: 700px) {
+
+  .navbar {
+    height: 60px;
+
+    padding: 0 12px;
+
+    display: flex !important;
+  }
+
+
+  /* LOGO */
+
+  .navbar-logo {
+    flex-shrink: 0;
+  }
+
+  .navbar-logo img {
+    width: 75px;
+    height: 55px;
+  }
+
+
+  /* Hide desktop navigation */
+
+  .navbar-links {
+    display: none !important;
+  }
+
+
+  /* SEARCH STAYS OUTSIDE MENU */
+
+  .search-box {
+    display: flex !important;
+
+    width: 180px;
+    height: 34px;
+
+    margin-left: auto;
+    margin-right: 8px;
+  }
+
+
+  /* HAMBURGER */
+
+  .navbar-menu-button {
+    display: flex !important;
+  }
+
+
+  /* Show Home/Shop/About/Contact
+     inside mobile menu */
+
+  .mobile-nav-link {
+    display: flex !important;
+  }
+
+
+  /* MOBILE MENU */
+
+  .menu-panel {
+    position: fixed;
+
+    top: 60px;
+    right: 10px;
+
+    width: 230px;
+
+    max-width: calc(100vw - 20px);
+  }
+}
+
+
+/* ==================================================
+   SMALL PHONE
+================================================== */
+
+@media (max-width: 480px) {
+
+  .navbar {
+    padding: 0 8px;
+  }
+
+  .navbar-logo img {
+    width: 65px;
+  }
+
+  .search-box {
+    width: 150px;
+  }
+
+  .search-box input {
+    font-size: 12px;
+  }
+
+  .navbar-menu-button > button {
+    font-size: 20px;
+  }
+}
+
+
+/* ==================================================
+   VERY SMALL PHONE
+================================================== */
+
+@media (max-width: 380px) {
+
+  .navbar-logo img {
+    width: 55px;
+  }
+
+  .search-box {
+    width: 125px;
+  }
+
+  .search-box input {
+    font-size: 11px;
+  }
+}

@@ -1,0 +1,231 @@
+/* =========================
+   PROFILE PAGE
+========================= */
+
+.profile-page {
+  width: 100%;
+  min-height: 100vh;
+
+  box-sizing: border-box;
+
+  padding: 100px 20px 60px;
+
+  background: linear-gradient(
+    110deg,
+    #e4dcee 60%,
+    #dbe8f1 100%
+  );
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  overflow-x: hidden;
+}
+
+
+/* =========================
+   PROFILE CARD
+========================= */
+
+.profile-card {
+  width: 100%;
+  max-width: 550px;
+
+  box-sizing: border-box;
+
+  padding: 35px;
+
+  background: rgb(252, 252, 253);
+
+  border-radius: 18px;
+
+  box-shadow: 0 8px 22px #918493;
+}
+
+
+/* =========================
+   TITLE
+========================= */
+
+.profile-card h1 {
+  margin: 0 0 30px;
+
+  text-align: center;
+
+  color: #603e7c;
+
+  font-size: clamp(28px, 4vw, 30px);
+  font-weight: 500;
+}
+
+
+/* =========================
+   PROFILE INFO
+========================= */
+
+.profile-info {
+  width: 100%;
+  min-width: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 18px;
+}
+
+
+/* =========================
+   INFO ROW
+========================= */
+
+.profile-info p {
+  width: 100%;
+  min-width: 0;
+
+  box-sizing: border-box;
+
+  margin: 0;
+  padding: 16px;
+
+  border-radius: 10px;
+
+  background: #f5f0f8;
+
+  color: #615b79;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 20px;
+}
+
+.profile-info strong {
+  flex-shrink: 0;
+
+  color: #5c4b61;
+}
+
+.profile-info span {
+  min-width: 0;
+
+  color: #7e6183;
+
+  text-align: right;
+
+  overflow-wrap: anywhere;
+}
+
+
+/* =========================
+   ERROR
+========================= */
+
+.profile-error {
+  margin: 0;
+
+  text-align: center;
+
+  color: #a94442;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+  .profile-page {
+    padding: 90px 6% 55px;
+  }
+
+  .profile-card {
+    max-width: 600px;
+
+    padding: 30px;
+  }
+
+  .profile-info p {
+    padding: 15px;
+  }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 650px) {
+
+  .profile-page {
+    padding: 80px 6% 50px;
+  }
+
+  .profile-card {
+    width: 100%;
+
+    padding: 25px 20px;
+
+    border-radius: 16px;
+  }
+
+  .profile-card h1 {
+    font-size: 26px;
+
+    margin-bottom: 25px;
+  }
+
+  .profile-info {
+    gap: 14px;
+  }
+
+  .profile-info p {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 6px;
+
+    padding: 14px;
+  }
+
+  .profile-info span {
+    width: 100%;
+
+    text-align: left;
+
+    overflow-wrap: anywhere;
+  }
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 400px) {
+
+  .profile-page {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .profile-card {
+    padding: 22px 15px;
+  }
+
+  .profile-card h1 {
+    font-size: 24px;
+  }
+
+  .profile-info p {
+    padding: 13px;
+  }
+
+  .profile-info strong,
+  .profile-info span {
+    font-size: 13px;
+  }
+}

@@ -1,0 +1,690 @@
+/* ===============================
+   RESPONSIVE SAFETY
+================================ */
+
+html,
+body,
+#root {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+/* ===============================
+   ABOUT HERO
+================================ */
+
+.about-hero {
+  min-height: 300px;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px 20px;
+  overflow: hidden;
+
+  background: linear-gradient(
+    110deg,
+    #f7e7ed 0%,
+    #ece4ed 55%,
+    #dbe8f1 100%
+  );
+}
+
+.section-label {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #7c3343;
+  margin: 70px 0 12px;
+}
+
+.about-hero h1 {
+  width: 100%;
+  max-width: 750px;
+  box-sizing: border-box;
+
+  font-size: clamp(32px, 4vw, 48px);
+  font-weight: 400;
+  line-height: 1.05;
+  color: #2f3040;
+
+  margin: 0 0 20px;
+  overflow-wrap: break-word;
+}
+
+.about-intro {
+  width: 100%;
+  max-width: 650px;
+  box-sizing: border-box;
+
+  font-size: 14px;
+  line-height: 1.6;
+  color: #55505a;
+
+  margin: 0;
+  overflow-wrap: break-word;
+}
+
+
+/* ===============================
+   MISSION SECTION
+================================ */
+
+.mission-section {
+  width: 100%;
+  box-sizing: border-box;
+
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 50px;
+  align-items: center;
+
+  padding: 55px 7%;
+  background: #faf8f4;
+
+  overflow: hidden;
+}
+
+.mission-image {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  height: 330px;
+
+  overflow: hidden;
+  border-radius: 70px;
+}
+
+.mission-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.mission-image:hover img {
+  transform: scale(1.05);
+}
+
+
+/* ===============================
+   MISSION CONTENT
+================================ */
+
+.mission-content {
+  width: 100%;
+  min-width: 0;
+}
+
+.mission-content h2 {
+  font-size: 28px;
+  font-weight: 500;
+  color: #6d303f;
+
+  margin: 0 0 20px;
+  text-align: left;
+}
+
+.mission-content > p {
+  width: 100%;
+  max-width: 550px;
+
+  font-size: 14px;
+  line-height: 1.6;
+  color: #5d5660;
+
+  margin: 0 0 8px;
+  overflow-wrap: break-word;
+}
+
+
+/* ===============================
+   MISSION STATS
+================================ */
+
+.mission-stats {
+  width: 100%;
+  box-sizing: border-box;
+  min-width: 0;
+
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 15px;
+
+  margin-top: 25px;
+}
+
+.stat-card {
+  min-width: 0;
+  min-height: 95px;
+  box-sizing: border-box;
+
+  padding: 15px;
+
+  border: 1px solid #d8d0d5;
+  border-radius: 14px;
+  background: #ffffff;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+
+  transition: 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(100, 70, 80, 0.12);
+}
+
+.stat-icon {
+  font-size: 15px;
+  color: #7c3343;
+  margin-bottom: 8px;
+}
+
+.stat-card h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+  color: #7c3343;
+  white-space: nowrap;
+}
+
+.stat-card p {
+  margin: 0;
+  font-weight: bold;
+  font-size: 8px;
+  letter-spacing: 0.5px;
+  color: #34313a;
+  text-align: left;
+}
+
+
+/* ===============================
+   FLORISTS SECTION
+================================ */
+
+.florists-section {
+  width: 100%;
+  box-sizing: border-box;
+
+  padding: 50px 7% 60px;
+  background: #faf8f4;
+  text-align: center;
+
+  overflow: hidden;
+}
+
+.florists-section h2 {
+  font-size: 26px;
+  font-weight: 500;
+  color: #69607a;
+
+  margin: 0 0 35px;
+}
+
+
+/* ===============================
+   FLORIST GRID
+================================ */
+
+.florists-grid {
+  width: 100%;
+  max-width: 1000px;
+  box-sizing: border-box;
+
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 40px;
+
+  margin: 0 auto;
+}
+
+
+/* ===============================
+   FLORIST CARD
+================================ */
+
+.florist-card {
+  min-width: 0;
+  box-sizing: border-box;
+
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 30px;
+
+  box-shadow: 0 6px 20px rgba(70, 50, 60, 0.12);
+
+  transition: transform 0.3s ease;
+}
+
+.florist-card:hover {
+  transform: translateY(-5px);
+}
+
+.florist-card img {
+  width: 100%;
+  height: 210px;
+  display: block;
+
+  object-fit: cover;
+  border-radius: 22px;
+}
+
+.florist-card h3 {
+  margin: 10px 0 4px;
+
+  font-size: 15px;
+  font-weight: 500;
+  color: #34313a;
+
+  overflow-wrap: break-word;
+}
+
+.florist-card p {
+  margin: 0;
+
+  font-size: 11px;
+  font-style: italic;
+  color: #7c3343;
+
+  overflow-wrap: break-word;
+}
+
+
+/* ===============================
+   AWARDS
+================================ */
+
+.awards-section {
+  width: 100%;
+  box-sizing: border-box;
+
+  padding: 50px 7%;
+  text-align: center;
+
+  background: linear-gradient(
+    110deg,
+    #f7e7ed,
+    #e4dcee,
+    #dbe8f1
+  );
+
+  overflow: hidden;
+}
+
+.awards-section .section-label {
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.awards-section h3 {
+  width: 100%;
+  max-width: 750px;
+  box-sizing: border-box;
+
+  margin: 0 auto 35px;
+
+  font-size: clamp(30px, 4vw, 48px);
+  font-weight: 400;
+  line-height: 1.05;
+
+  color: #34313a;
+  overflow-wrap: break-word;
+}
+
+.awards-grid {
+  width: 100%;
+  max-width: 1100px;
+  box-sizing: border-box;
+
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+
+  margin: 0 auto;
+}
+
+.awards-grid p {
+  min-width: 0;
+  box-sizing: border-box;
+
+  padding: 15px 10px;
+
+  font-size: 14px;
+  font-style: italic;
+  color: #5d5660;
+
+  margin: 0;
+
+  overflow-wrap: break-word;
+}
+
+
+/* ===============================
+   TABLET
+================================ */
+
+@media (max-width: 900px) {
+
+  .about-hero {
+    padding: 80px 6% 55px;
+  }
+
+  .section-label {
+    margin-top: 0;
+  }
+
+  .about-hero h1 {
+    max-width: 650px;
+  }
+
+  .about-intro {
+    max-width: 600px;
+  }
+
+
+  /* ---------- MISSION ---------- */
+
+  .mission-section {
+    grid-template-columns: 1fr;
+    gap: 35px;
+
+    padding: 50px 6%;
+
+    justify-items: center;
+  }
+
+  .mission-image {
+    width: 100%;
+    max-width: 700px;
+    height: 350px;
+  }
+
+  .mission-content {
+    width: 100%;
+    max-width: 700px;
+  }
+
+  .mission-content > p {
+    max-width: 100%;
+  }
+
+
+  /* ---------- FLORISTS ---------- */
+
+  .florists-section {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+
+  .florists-grid {
+    gap: 20px;
+  }
+
+  .florist-card {
+    padding: 12px;
+  }
+
+  .florist-card img {
+    height: 180px;
+  }
+
+
+  /* ---------- AWARDS ---------- */
+
+  .awards-section {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+
+  .awards-grid {
+    gap: 15px;
+  }
+}
+
+
+/* ===============================
+   MOBILE
+================================ */
+
+@media (max-width: 650px) {
+
+  /* ---------- HERO ---------- */
+
+  .about-hero {
+    min-height: auto;
+
+    padding: 80px 20px 55px;
+  }
+
+  .section-label {
+    margin: 0 0 15px;
+  }
+
+  .about-hero h1 {
+    max-width: 100%;
+
+    font-size: clamp(28px, 8vw, 36px);
+    line-height: 1.1;
+
+    margin: 0 0 20px;
+  }
+
+  /*
+     Remove the forced desktop line break.
+     The browser can now wrap naturally.
+  */
+  .about-hero h1 br {
+    display: none;
+  }
+
+  .about-intro {
+    max-width: 100%;
+
+    font-size: 13px;
+    line-height: 1.6;
+
+    margin: 0;
+  }
+
+
+  /* ---------- MISSION ---------- */
+
+  .mission-section {
+    grid-template-columns: 1fr;
+
+    gap: 30px;
+
+    padding: 45px 6%;
+  }
+
+  .mission-image {
+    width: 100%;
+    max-width: 100%;
+    height: 280px;
+
+    border-radius: 40px;
+  }
+
+  .mission-content {
+    width: 100%;
+  }
+
+  .mission-content h2 {
+    font-size: 26px;
+    margin-bottom: 15px;
+  }
+
+  .mission-content > p {
+    max-width: 100%;
+
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+
+  /* ---------- STATS ---------- */
+
+  .mission-stats {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    gap: 10px;
+    margin-top: 22px;
+  }
+
+  .stat-card {
+    min-height: 90px;
+
+    padding: 12px 8px;
+
+    align-items: center;
+    text-align: center;
+  }
+
+  .stat-icon {
+    margin-bottom: 6px;
+  }
+
+  .stat-card h3 {
+    font-size: 14px;
+  }
+
+  .stat-card p {
+    font-size: 7px;
+    text-align: center;
+  }
+
+
+  /* ---------- FLORISTS ---------- */
+
+  .florists-section {
+    padding: 45px 6% 50px;
+  }
+
+  .florists-section h2 {
+    font-size: 24px;
+    margin-bottom: 25px;
+  }
+
+  .florists-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+
+    max-width: 400px;
+  }
+
+  .florist-card {
+    width: 100%;
+    max-width: 100%;
+
+    margin: 0 auto;
+  }
+
+  .florist-card img {
+    width: 100%;
+    height: 250px;
+  }
+
+
+  /* ---------- AWARDS ---------- */
+
+  .awards-section {
+    padding: 45px 6%;
+  }
+
+  .awards-section h3 {
+    max-width: 100%;
+
+    font-size: clamp(28px, 9vw, 40px);
+    line-height: 1.1;
+
+    margin-bottom: 25px;
+  }
+
+  .awards-grid {
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+
+  .awards-grid p {
+    font-size: 13px;
+  }
+}
+
+
+/* ===============================
+   SMALL MOBILE
+================================ */
+
+@media (max-width: 400px) {
+
+  .about-hero {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .about-hero h1 {
+    font-size: 29px;
+  }
+
+  .about-intro {
+    font-size: 12.5px;
+  }
+
+
+  .mission-section {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .mission-image {
+    height: 240px;
+    border-radius: 30px;
+  }
+
+
+  .mission-stats {
+    gap: 7px;
+  }
+
+  .stat-card {
+    padding: 10px 5px;
+  }
+
+  .stat-card h3 {
+    font-size: 12px;
+  }
+
+  .stat-card p {
+    font-size: 6px;
+  }
+
+
+  .florists-section,
+  .awards-section {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .florist-card img {
+    height: 220px;
+  }
+}

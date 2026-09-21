@@ -1,0 +1,329 @@
+/* ===============================
+   AUTH PAGE
+================================ */
+
+.auth-page {
+  width: 100%;
+  min-height: 100vh;
+
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 40px 20px;
+
+  background: linear-gradient(
+    135deg,
+    #f7e7ed 0%,
+    #e4dcee 50%,
+    #e3ecf3 100%
+  );
+
+  overflow-x: hidden;
+}
+
+
+/* ===============================
+   AUTH CONTAINER
+================================ */
+
+.auth-container {
+  width: 100%;
+  max-width: 400px;
+
+  box-sizing: border-box;
+
+  padding: 35px 40px;
+
+  background: rgba(255, 255, 255, 0.9);
+
+  border-radius: 24px;
+
+  box-shadow:
+    0 15px 40px
+    rgba(100, 80, 110, 0.15);
+
+  text-align: center;
+}
+
+
+/* ===============================
+   TITLE
+================================ */
+
+.auth-container h1 {
+  margin: 0 0 30px;
+
+  color: #66536d;
+
+  font-size: clamp(28px, 5vw, 32px);
+
+  font-weight: 600;
+
+  line-height: 1.2;
+
+  overflow-wrap: break-word;
+}
+
+
+/* ===============================
+   FORM
+================================ */
+
+.auth-form {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 16px;
+}
+
+
+/* ===============================
+   INPUT
+================================ */
+
+.auth-input {
+  width: 100%;
+  min-width: 0;
+
+  box-sizing: border-box;
+
+  padding: 14px 16px;
+
+  border: 1px solid #ded2e3;
+
+  border-radius: 12px;
+
+  outline: none;
+
+  background: #fcf8fb;
+
+  color: #4b4050;
+
+  font-size: 15px;
+
+  transition: 0.3s ease;
+}
+
+.auth-input::placeholder {
+  color: #a88f95;
+}
+
+.auth-input:focus {
+  border-color: #bb959a;
+
+  box-shadow:
+    0 0 0 3px
+    rgba(185, 155, 189, 0.15);
+
+  background: #ffffff;
+}
+
+
+/* ===============================
+   AUTH BUTTON
+================================ */
+
+.auth-button {
+  width: 100%;
+
+  margin-top: 8px;
+
+  padding: 14px;
+
+  box-sizing: border-box;
+
+  border: none;
+
+  border-radius: 12px;
+
+  background: #8f3c47;
+
+  color: white;
+
+  font-size: 16px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+.auth-button:hover {
+  background: #9c757d;
+
+  transform: translateY(-1px);
+}
+
+
+/* ===============================
+   SUCCESS / ERROR MESSAGE
+================================ */
+
+.auth-message {
+  width: 100%;
+
+  box-sizing: border-box;
+
+  margin: -10px 0 15px;
+
+  color: #7c3343;
+
+  font-size: 13px;
+
+  line-height: 1.5;
+
+  overflow-wrap: break-word;
+}
+
+
+/* ===============================
+   SWITCH
+================================ */
+
+.auth-switch {
+  margin: 25px 0 0;
+
+  color: #97777e;
+
+  font-size: 14px;
+
+  line-height: 1.5;
+}
+
+.auth-switch-button {
+  border: none;
+
+  background: transparent;
+
+  color: #855161;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.auth-switch-button:hover {
+  text-decoration: underline;
+}
+
+
+/* ===============================
+   TABLET
+================================ */
+
+@media (max-width: 900px) {
+
+  .auth-page {
+    padding: 40px 6%;
+  }
+
+  .auth-container {
+    max-width: 420px;
+
+    padding: 35px 32px;
+  }
+}
+
+
+/* ===============================
+   MOBILE
+================================ */
+
+@media (max-width: 650px) {
+
+  .auth-page {
+    padding: 30px 6%;
+  }
+
+  .auth-container {
+    width: 100%;
+
+    padding: 30px 22px;
+
+    border-radius: 20px;
+  }
+
+  .auth-container h1 {
+    font-size: 28px;
+
+    margin-bottom: 25px;
+  }
+
+  .auth-form {
+    gap: 14px;
+  }
+
+  .auth-input {
+    padding: 13px 14px;
+
+    font-size: 14px;
+  }
+
+  .auth-button {
+    padding: 13px;
+
+    font-size: 15px;
+  }
+
+  .auth-switch {
+    font-size: 13px;
+
+    margin-top: 22px;
+  }
+
+  .auth-switch-button {
+    font-size: 13px;
+  }
+}
+
+
+/* ===============================
+   SMALL MOBILE
+================================ */
+
+@media (max-width: 400px) {
+
+  .auth-page {
+    padding: 20px 15px;
+  }
+
+  .auth-container {
+    padding: 28px 16px;
+
+    border-radius: 18px;
+  }
+
+  .auth-container h1 {
+    font-size: 25px;
+
+    margin-bottom: 22px;
+  }
+
+  .auth-input {
+    padding: 12px;
+
+    font-size: 13px;
+  }
+
+  .auth-button {
+    padding: 12px;
+
+    font-size: 14px;
+  }
+
+  .auth-switch {
+    font-size: 12px;
+  }
+
+  .auth-switch-button {
+    font-size: 12px;
+  }
+}
