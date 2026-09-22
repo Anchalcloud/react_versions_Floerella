@@ -1,18 +1,79 @@
-# React + Vite
+# 🌸 Floerella
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A full-stack flower e-commerce website built with the MERN stack.
 
-Currently, two official plugins are available:
+Floerella allows customers to browse flowers, filter products, manage their wishlist and cart, place orders, and track their orders. It also includes an admin panel for managing customer orders and order status.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Features
 
-## React Compiler
+### Customer
+- User registration and login
+- Browse flower products
+- Search flowers
+- Filter by occasion and colour
+- Price filtering
+- Wishlist management
+- Add to cart
+- Increase/decrease cart quantity
+- Remove products from cart
+- Checkout with customer details
+- Cash on Delivery / Online Payment selection
+- Order placement
+- Order success page
+- View previous orders
+- View profile information
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+### Admin
+- Admin login
+- View all customer orders
+- View customer details
+- View ordered flowers
+- Update order status
+- Delete orders
+- Admin logout
 
-Note: This will impact Vite dev & build performances.
+## 🛠️ Tech Stack
 
-## Expanding the Oxlint configuration
+### Frontend
+- React
+- React Router
+- Axios
+- CSS
+- Font Awesome
+- Vite
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+### Backend
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose
+- JWT Authentication
+
+## 📁 Project Structure
+
+```text
+Floerella/
+│
+├── Backend/
+│   ├── config/
+│   ├── controllers/
+│   ├── middlewares/
+│   ├── models/
+│   ├── routes/
+│   ├── server.js
+│   └── package.json
+│
+├── public/
+│
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── context/
+│   ├── data/
+│   ├── pages/
+│   ├── App.jsx
+│   └── main.jsx
+│
+├── .gitignore
+├── package.json
+└── README.md
