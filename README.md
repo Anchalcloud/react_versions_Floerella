@@ -77,3 +77,26 @@ Floerella/
 ├── .gitignore
 ├── package.json
 └── README.md
+
+
+
+### Home Page
+<img src="./Screenshots/home.png" width="800"/>
+
+### Shop Page
+<img src="./Screenshots/shop.png" width="800"/>
+
+### Cart
+<img src="./Screenshots/cart.png" width="800"/>
+
+### Checkout
+<img src="./Screenshots/checkout.png" width="800"/>
+
+### Customer Profile
+<img src="./Screenshots/customer.png" width="800"/>
+
+### My Orders
+<img src="./Screenshots/orders.png" width="800"/>
+
+### Order Success
+<img src="./Screenshots/order-success.png" width="800"/>
