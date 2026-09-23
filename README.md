@@ -78,6 +78,8 @@ Floerella/
 ├── package.json
 └── README.md
 
+```
+
 ## 📸 Screenshots
 
 ### Home Page
