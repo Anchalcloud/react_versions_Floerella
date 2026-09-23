@@ -95,9 +95,9 @@ Floerella/
 <img src="./Screenshots/Checkout.PNG" width="800"/>
 
 ### Customer Profile
-<img src="./Screenshots/Customer.PNG" width="800"/>
+<img src="./Screenshots/CustomerOrder.PNG" width="800"/>
 
 
 
 ### Order Success
-<img src="./Screenshots/Order-Success.PNG" width="800"/>
+<img src="./Screenshots/OrderSuccess.PNG" width="800"/>
