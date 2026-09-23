@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
+import Navbar from "../components/Navbar.jsx"
 import  "./Myorders.css";
 
 
@@ -45,6 +46,8 @@ function MyOrders() {
 }, []);
 
   return (
+   <>
+    <Navbar />
     <div className="my-orders-page">
       
      <h1  className="my-orders-title"> My Orders </h1>
@@ -91,6 +94,7 @@ function MyOrders() {
 
       )}
     </div>
+   </> 
   );
 }
 

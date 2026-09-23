@@ -95,7 +95,7 @@ function AdminOrders() {
 
     return (
         <div className="admin-orders">
-          <h1>Admin Orders</h1>
+          <h1>Customers Orders</h1>
 
 
 

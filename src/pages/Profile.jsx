@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import "./Profile.css";
+import Navbar from "../components/Navbar.jsx"
 
 function Profile() {
   const [user, setUser] = useState(null);
@@ -38,6 +39,8 @@ function Profile() {
   }, []);
 
   return (
+   <> 
+    <Navbar/>
     <div className="profile-page">
       <div className="profile-card">
 
@@ -65,6 +68,7 @@ function Profile() {
 
       </div>
     </div>
+   </>
   );
 }
 
