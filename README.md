@@ -89,7 +89,7 @@ Floerella/
 <img src="./Screenshots/Shop.PNG" width="800"/>
 
 ### Cart
-<img src="./Screenshots/Cart.PNG" width="800"/>
+<img src="./Screenshots/cart.PNG" width="800"/>
 
 ### Checkout
 <img src="./Screenshots/Checkout.PNG" width="800"/>
