@@ -4,6 +4,10 @@ A full-stack flower e-commerce website built with the MERN stack.
 
 Floerella allows customers to browse flowers, filter products, manage their wishlist and cart, place orders, and track their orders. It also includes an admin panel for managing customer orders and order status.
 
+## 🔗 Live Demo
+
+[🌸 View Floerella Live](https://react-versions-floerella-wtlq.vercel.app)
+
 ## ✨ Features
 
 ### Customer
