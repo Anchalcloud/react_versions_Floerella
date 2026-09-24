@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import "./FlowerCard.css";
+import "./Flowercard.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import { WishlistContext } from "../context/WishlistContext";
@@ -16,8 +16,7 @@ function FlowerCard({ id, name, price, image, occasion, color }) {
     name,
     price,
     image,
-    occasion,
-    color,
+   
   };
 
   const inWishlist = wishlist.some(
