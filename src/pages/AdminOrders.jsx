@@ -3,6 +3,10 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import "./Adminorder.css";
 
+const API_URL = import.meta.env.VITE_BACKEND_URL;
+
+
+
 function AdminOrders() {
   const [orders, setOrders] = useState([]);
   const navigate = useNavigate();
@@ -15,7 +19,7 @@ function AdminOrders() {
     try {
       const token = localStorage.getItem("adminToken");
 
-      const response = await axios.get( "http://localhost:4000/api/order/all",
+      const response = await axios.get(  `${API_URL}/api/order/all`,
           {
               headers: {
                   token: token,
@@ -36,7 +40,7 @@ function AdminOrders() {
 
         const adminToken = localStorage.getItem("adminToken");
 
-        const response = await axios.put( `http://localhost:4000/api/order/update/${id}`,
+        const response = await axios.put( `${API_URL}/api/order/update/${id}`,
           { orderStatus: status, },
 
           {
@@ -76,7 +80,7 @@ function AdminOrders() {
       try {
           const adminToken = localStorage.getItem("adminToken");
 
-          const response = await axios.delete(  `http://localhost:4000/api/order/delete/${id}`,
+          const response = await axios.delete(  `${API_URL}/api/order/update/${id}`,
               {
                 headers: {
                   token: adminToken,

@@ -3,6 +3,8 @@ import axios from "axios";
 import Navbar from "../components/Navbar.jsx"
 import  "./Myorders.css";
 
+const API_URL = import.meta.env.VITE_BACKEND_URL;
+
 
 function MyOrders() {
 
@@ -17,7 +19,7 @@ function MyOrders() {
 
       try {
 
-          const response = await axios.get( "http://localhost:4000/api/order/my-orders",
+          const response = await axios.get(`${API_URL}/api/order/my-orders`,
             {
               headers: {
                 token: token,

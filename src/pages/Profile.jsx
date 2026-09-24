@@ -3,6 +3,9 @@ import axios from "axios";
 import "./Profile.css";
 import Navbar from "../components/Navbar.jsx"
 
+const API_URL = import.meta.env.VITE_BACKEND_URL;
+
+
 function Profile() {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -14,7 +17,7 @@ function Profile() {
 
       try {
         const response = await axios.get(
-          "http://localhost:4000/api/user/profile",
+          `${API_URL}/api/user/profile`,
           {
             headers: {
               token: token,

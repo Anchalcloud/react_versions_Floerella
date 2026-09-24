@@ -6,6 +6,8 @@ import Footer from "../components/Footer";
 import "./Checkout.css";
 import axios from "axios";
 
+const API_URL = import.meta.env.VITE_BACKEND_URL;
+
 function Checkout() {
 
   const navigate = useNavigate();
@@ -74,7 +76,7 @@ function Checkout() {
       try {
        const token = localStorage.getItem("token");
 
-          const response = await axios.post( "http://localhost:4000/api/order/place",
+          const response = await axios.post(`${API_URL}/api/order/place`,
             orderData,
             {
               headers: {

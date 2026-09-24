@@ -3,6 +3,9 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import "./AdminLogin.css";
 
+const API_URL = import.meta.env.VITE_BACKEND_URL;
+
+
 function AdminLogin() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -15,7 +18,7 @@ function AdminLogin() {
 
     try {
       const response = await axios.post(
-        "http://localhost:4000/api/admin/login",
+        `${API_URL}/api/admin/login`,
         {
           email,
           password,

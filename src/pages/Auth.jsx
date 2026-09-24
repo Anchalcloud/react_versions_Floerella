@@ -4,6 +4,8 @@ import { useNavigate } from "react-router-dom";
 import "./Auth.css";
 import AuthContext from "../context/AuthContext";
 
+const API_URL = import.meta.env.VITE_BACKEND_URL;
+
 function Auth() {
   const [isLogin, setIsLogin] = useState(false);
   const [message, setMessage] = useState("");
@@ -27,7 +29,7 @@ function Auth() {
       e.preventDefault();
 
       try {
-            const response = await axios.post(  "http://localhost:4000/api/user/register",
+            const response = await axios.post(  `${API_URL}/api/user/register`,
                 formData
             );
 
@@ -47,7 +49,7 @@ function Auth() {
         e.preventDefault();
 
         try {
-            const response = await axios.post(  "http://localhost:4000/api/user/login",
+            const response = await axios.post(  `${API_URL}/api/user/login`,
                 {
                   email: formData.email,
                   password: formData.password,
